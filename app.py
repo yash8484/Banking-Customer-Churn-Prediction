@@ -72,7 +72,7 @@ if st.button('Predict Churn'):
     # Display result
     st.write(f'### Churn Probability: {prediction_proba:.2f}%')
     
-    if prediction_proba > 0.5:
+    if prediction_proba > 50:
         st.success('✅ The customer is **likely to churn**.')
     else:
         st.error('⚠️ The customer is **not likely to churn**.')
